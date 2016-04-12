@@ -8,6 +8,10 @@ import automata.resyntax.*;
 public class EpsilonNFA {
     public Graph<String, Character> graph;
 
+    // Name of nodes
+    public String start = "START";
+    public String end = "END"; // probably wont be used
+
 
     public EpsilonNFA() {
         graph = new Graph<>();
@@ -15,7 +19,7 @@ public class EpsilonNFA {
 
     public void buildFromRegexTree(RegExp t) {
         System.out.println(t.getClass());
-        t.addToGraph(graph);
+        t.addToGraph(graph, start, end);
     }
 
 
