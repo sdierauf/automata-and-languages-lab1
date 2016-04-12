@@ -5,4 +5,9 @@ public class ZeroOrOne extends RegExp {
     public ZeroOrOne(RegExp r) {
         this.r = r;
     }
+
+    @Override
+    public void addToGraph(Graph g, String start, String end) {
+
+    }
 }

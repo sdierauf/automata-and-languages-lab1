@@ -6,4 +6,9 @@ public class Union extends RegExp {
         this.r1 = r1;
         this.r2 = r2;
     }
+
+    @Override
+    public void addToGraph(Graph g, String start, String end) {
+
+    }
 }

@@ -5,4 +5,9 @@ public class Closure extends RegExp {
     public Closure(RegExp r) {
         this.r = r;
     }
+
+    @Override
+    public void addToGraph(Graph g, String start, String end) {
+
+    }
 }

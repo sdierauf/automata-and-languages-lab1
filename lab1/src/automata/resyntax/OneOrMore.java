@@ -5,4 +5,9 @@ public class OneOrMore extends RegExp {
     public OneOrMore(RegExp r) {
         this.r = r;
     }
+
+    @Override
+    public void addToGraph(Graph g, String start, String end) {
+
+    }
 }
