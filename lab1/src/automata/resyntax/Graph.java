@@ -39,6 +39,7 @@ public class Graph<Node extends Comparable<Node>, Label extends Comparable<Label
     private final boolean DEBUG = false;
     private HashMap<Node, HashSet<Edge<Node, Label>>> graph;
     public Set<Node> finalStates;
+    public Set<Node> literals;
 
     /**
      * Constructs an empty graph
@@ -48,6 +49,7 @@ public class Graph<Node extends Comparable<Node>, Label extends Comparable<Label
         this.graph = new HashMap<Node, HashSet<Edge<Node, Label>>>();
         checkRep();
         this.finalStates = new HashSet<>();
+        this.literals = new HashSet<>();
     }
 
     public boolean addFinalState(Node n) {
@@ -265,6 +267,19 @@ public class Graph<Node extends Comparable<Node>, Label extends Comparable<Label
         }
         return copy;
     }
+
+    public void printGraph() {
+        SortedSet<Node> sortedKeys = new TreeSet<Node>(this.graph.keySet());
+        for(Node key: sortedKeys) {
+            System.out.print(key + ": ");
+            for (Edge<Node, Label> edge: getEdges(key)) {
+                System.out.print("{ " + edge.getData() + ", " + edge.getDestination() + "}, ");
+            }
+            System.out.println();
+        }
+    }
+
+
 
     /**
      * Checks to make sure the representation invariant holds

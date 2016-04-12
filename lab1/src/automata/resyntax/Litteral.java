@@ -14,7 +14,7 @@ public class Litteral extends RegExp {
         g.addEdge(start, RegExp.EPSILON, literalStart);
         g.addEdge(literalStart, c, literalEnd);
         g.addEdge(literalEnd, RegExp.EPSILON, end);
-        g.addFinalState(end);
+//        g.addFinalState(end);
 
     }
 }

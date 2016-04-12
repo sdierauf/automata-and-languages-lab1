@@ -9,6 +9,15 @@ public class Union extends RegExp {
 
     @Override
     public void addToGraph(Graph g, String start, String end) {
-
+        String branchAStart = newQ();
+        String branchAEnd = newQ();
+        String branchBStart = newQ();
+        String branchBEnd = newQ();
+        g.addEdge(start, EPSILON, branchAStart);
+        g.addEdge(start, EPSILON, branchBStart);
+        r1.addToGraph(g, branchAStart, branchAEnd);
+        r2.addToGraph(g, branchBStart, branchBEnd);
+        g.addEdge(branchBEnd, EPSILON, end);
+        g.addEdge(branchAEnd, EPSILON, end);
     }
 }

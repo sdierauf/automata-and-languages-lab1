@@ -3,6 +3,7 @@ import java.io.*;
 import java.util.*;
 import automata.REParser;
 import automata.*;
+import automata.resyntax.Graph;
 import automata.resyntax.RegExp;
 
 /**
@@ -17,7 +18,7 @@ public class Main {
         // get regex
         // build with REParser
         // convert into Graph
-        String testRegex = "(ab)*";
+        String testRegex = "abcd";
         RegExp t = null;
         try {
             t = REParser.parse(testRegex);
@@ -30,7 +31,9 @@ public class Main {
         }
         EpsilonNFA e = new EpsilonNFA();
         e.buildFromRegexTree(t);
-
+        Graph<String, Character> newg = e.toDFAGraph();
+        newg.printGraph();
+//        DFA dfa = new DFA(e.toDFAGraph());
 
 
     }

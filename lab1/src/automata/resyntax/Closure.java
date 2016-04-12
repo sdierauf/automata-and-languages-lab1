@@ -8,6 +8,10 @@ public class Closure extends RegExp {
 
     @Override
     public void addToGraph(Graph g, String start, String end) {
-
+        String closureStart = newQ();
+        String closureEnd = newQ();
+        g.addEdge(start, RegExp.EPSILON, closureStart);
+        r.addToGraph(g, closureStart, closureEnd);
+        g.addEdge(closureEnd, RegExp.EPSILON, end);
     }
 }
