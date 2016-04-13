@@ -9,6 +9,7 @@ public class DFA {
 
     public DFA(Graph<String, Character> g) {
         this.graph = g;
+
     }
 
     // returns whether the input matches this DFA's graph

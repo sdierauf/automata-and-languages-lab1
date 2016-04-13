@@ -18,7 +18,7 @@ public class Main {
         // get regex
         // build with REParser
         // convert into Graph
-        String testRegex = "abcd";
+        String testRegex = "ab?c|d?";
         RegExp t = null;
         try {
             t = REParser.parse(testRegex);
@@ -33,7 +33,7 @@ public class Main {
         e.buildFromRegexTree(t);
         Graph<String, Character> newg = e.toDFAGraph();
         newg.printGraph();
-//        DFA dfa = new DFA(e.toDFAGraph());
+        DFA dfa = new DFA(newg);
 
 
     }

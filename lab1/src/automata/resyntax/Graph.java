@@ -277,6 +277,7 @@ public class Graph<Node extends Comparable<Node>, Label extends Comparable<Label
             }
             System.out.println();
         }
+        System.out.println("Final states: " + this.finalStates);
     }
 
 

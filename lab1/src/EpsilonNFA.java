@@ -40,7 +40,11 @@ public class EpsilonNFA {
         starterStates.add(start);
         Queue<Set<String>> todo = new LinkedList<>();
         Set<String> starterClosed = epsilonClose(starterStates);
-        setToName.put(starterClosed, "START");
+        if (starterClosed.contains(end)) {
+            ret.addFinalState(start);
+        }
+        setToName.put(starterClosed, start);
+
 
         todo.add(starterClosed);
 
@@ -70,13 +74,16 @@ public class EpsilonNFA {
                 HashMap<Character, Set<String>> STransClosed = new HashMap<>();
                 for (Character key: STrans.keySet()) {
                     Set<String> closed = epsilonClose(STrans.get(key));
-                    System.out.print("closed: ");
-                    System.out.println(closed);
+
                     STransClosed.put(key, closed);
                     todo.add(closed);
                     counter++;
                     String DFAResultNode = "s" + counter;
                     setToName.put(closed, DFAResultNode);
+                    System.out.println("closed: " + closed + " with name: " + DFAResultNode);
+                    if (closed.contains(end)) {
+                        ret.addFinalState(DFAResultNode);
+                    }
                     ret.addEdge(DFAStateGroupName, key, DFAResultNode);
                 }
             }
