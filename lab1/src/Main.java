@@ -12,13 +12,12 @@ import automata.resyntax.RegExp;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner sysInput = new Scanner(System.in);
         System.out.print("yolo");
 
         // get regex
         // build with REParser
         // convert into Graph
-        String testRegex = "[((( *f( |P|Q|R|S|T)*.)*)|(( *e( |P|Q|R|S|T)*.)*))( |P|Q|R|S|T|~|V|^|=|>|<)*]";
+        String testRegex = "d*";
 
         RegExp t = null;
         try {
@@ -42,6 +41,8 @@ public class Main {
         checkMatch(testRegex, "dddddddd");
         checkMatch(testRegex, "abcdddabcabcacdddddddabd");
 
+        loopForInput();
+
     }
 
     public static void checkMatch(String regex, String input) {
@@ -59,5 +60,51 @@ public class Main {
         e.buildFromRegexTree(t);
         DFA dfa = new DFA(e.toDFAGraph());
         System.out.println(regex + " MATCHES " + input + ": " + dfa.match(input));
+    }
+
+    public static void loopForInput() {
+        System.out.print("Name of file: ");
+        Scanner sysInput = new Scanner(System.in);
+//        String filename = sysInput.nextLine();
+        String filename = "testcases/testcase1.txt";
+        File file = new File(filename);
+        System.out.println();
+        Scanner fileScanner = null;
+        try {
+            fileScanner = new Scanner(file);
+        } catch (Exception e) {
+            System.out.println("file did not exist!");
+            loopForInput();
+        }
+        if (fileScanner == null) {
+            return;
+        }
+        String alphabet = fileScanner.nextLine();
+        String regex = fileScanner.nextLine();
+        String substringRegex = "((.?)+)"+regex;
+        RegExp t = null;
+        try {
+            t = REParser.parse(substringRegex);
+        } catch (Exception e) {
+            System.out.println("there was an error parsing the regex");
+            loopForInput();
+        }
+        if (t == null) {
+            return;
+        }
+        EpsilonNFA nfa = new EpsilonNFA();
+        nfa.buildFromRegexTree(t);
+        DFA dfa = new DFA(nfa.toDFAGraph());
+        dfa.graph.printGraph();
+//        System.out.println("Matching ");
+        while (fileScanner.hasNextLine()) {
+            String input = fileScanner.nextLine();
+            boolean matches = dfa.nonTerminalMatch(input);
+            if (matches) {
+                System.out.println(input + "\tPASS");
+            } else {
+                System.out.println(input + "\tFAIL");
+            }
+        }
     }
 }

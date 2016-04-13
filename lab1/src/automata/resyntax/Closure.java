@@ -13,5 +13,8 @@ public class Closure extends RegExp {
         g.addEdge(start, RegExp.EPSILON, closureStart);
         r.addToGraph(g, closureStart, closureEnd);
         g.addEdge(closureEnd, RegExp.EPSILON, end);
+        if (DEBUG) {
+            System.out.println(this.getClass());
+        }
     }
 }

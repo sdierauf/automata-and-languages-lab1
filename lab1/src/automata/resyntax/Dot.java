@@ -8,5 +8,8 @@ public class Dot extends RegExp {
         g.addEdge(start, RegExp.EPSILON, literalStart);
         g.addEdge(literalStart, DOT, literalEnd);
         g.addEdge(literalEnd, RegExp.EPSILON, end);
+        if (DEBUG) {
+            System.out.println(this.getClass());
+        }
     }
 }

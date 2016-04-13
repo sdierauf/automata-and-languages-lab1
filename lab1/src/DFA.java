@@ -41,4 +41,18 @@ public class DFA {
         }
         return finalStates.contains(curNode);
     }
+
+    public boolean nonTerminalMatch(String input) {
+        String curNode = start;
+        for (int i = 0; i < input.length(); i++) {
+            curNode = graph.hasChildWithEdgeLabel(curNode, input.charAt(i));
+            if (curNode == null) {
+                return false;
+            }
+            if (finalStates.contains(curNode)) {
+                return true;
+            }
+        }
+        return finalStates.contains(curNode);
+    }
 }

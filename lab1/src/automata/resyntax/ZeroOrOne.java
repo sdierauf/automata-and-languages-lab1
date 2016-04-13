@@ -14,5 +14,8 @@ public class ZeroOrOne extends RegExp {
         g.addEdge(zeroOrOneStart, EPSILON, zeroOrOneEnd); //zero case
         g.addEdge(zeroOrOneEnd, EPSILON, end);
         r.addToGraph(g, zeroOrOneStart, zeroOrOneEnd); // one case
+        if (DEBUG) {
+            System.out.println(this.getClass());
+        }
     }
 }

@@ -19,5 +19,8 @@ public class Union extends RegExp {
         r2.addToGraph(g, branchBStart, branchBEnd);
         g.addEdge(branchBEnd, EPSILON, end);
         g.addEdge(branchAEnd, EPSILON, end);
+        if (DEBUG) {
+            System.out.println(this.getClass());
+        }
     }
 }

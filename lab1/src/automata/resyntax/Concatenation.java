@@ -18,6 +18,8 @@ public class Concatenation extends RegExp {
         g.addEdge(midEpsilonBridge, EPSILON, midEpsilonBridge2);
         r2.addToGraph(g, midEpsilonBridge2, endEpsilonBridge);
         g.addEdge(endEpsilonBridge, EPSILON, end);
-
+        if (DEBUG) {
+            System.out.println(this.getClass());
+        }
     }
 }

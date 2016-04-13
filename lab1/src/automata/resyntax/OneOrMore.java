@@ -19,5 +19,8 @@ public class OneOrMore extends RegExp {
         g.addEdge(moreEnd, EPSILON, moreStart); // loop back case
         g.addEdge(oneEnd, EPSILON, end); // only one case
         g.addEdge(moreEnd, EPSILON, end);
+        if (DEBUG) {
+            System.out.println(this.getClass());
+        }
     }
 }
