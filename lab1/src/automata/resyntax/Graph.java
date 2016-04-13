@@ -203,7 +203,7 @@ public class Graph<Node extends Comparable<Node>, Label extends Comparable<Label
 
     public Node hasChildWithEdgeLabel(Node parent, Label label) {
         for (Edge<Node, Label> e : getEdges(parent)) {
-            if (e.getData().equals(label)) {
+            if (e.getData().equals(label) || e.getData().equals(RegExp.DOT)) {
                 return e.getDestination();
             }
         }

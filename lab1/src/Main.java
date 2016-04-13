@@ -18,7 +18,7 @@ public class Main {
         // get regex
         // build with REParser
         // convert into Graph
-        String testRegex = "(a(b)?c|(d?))+";
+        String testRegex = "[((( *f( |P|Q|R|S|T)*.)*)|(( *e( |P|Q|R|S|T)*.)*))( |P|Q|R|S|T|~|V|^|=|>|<)*]";
 
         RegExp t = null;
         try {
