@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b49d0f8-1df1-4a0f-98b5-e2981e547c24" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab1/DFA.class" afterPath="$PROJECT_DIR$/out/production/lab1/DFA.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab1/EpsilonNFA.class" afterPath="$PROJECT_DIR$/out/production/lab1/EpsilonNFA.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab1/Main.class" afterPath="$PROJECT_DIR$/out/production/lab1/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab1/automata/resyntax/Graph.class" afterPath="$PROJECT_DIR$/out/production/lab1/automata/resyntax/Graph.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab1/automata/resyntax/OneOrMore.class" afterPath="$PROJECT_DIR$/out/production/lab1/automata/resyntax/OneOrMore.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DFA.java" afterPath="$PROJECT_DIR$/src/DFA.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EpsilonNFA.java" afterPath="$PROJECT_DIR$/src/EpsilonNFA.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/automata/resyntax/Graph.java" afterPath="$PROJECT_DIR$/src/automata/resyntax/Graph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/automata/resyntax/OneOrMore.java" afterPath="$PROJECT_DIR$/src/automata/resyntax/OneOrMore.java" />
     </list>
     <ignored path="lab1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,7 +24,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EpsilonNFA.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EpsilonNFA.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EpsilonNFA.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="371">
@@ -74,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            <state relative-caret-position="356">
+              <caret line="42" column="58" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -178,9 +168,9 @@
         <option value="$PROJECT_DIR$/src/automata/resyntax/ZeroOrOne.java" />
         <option value="$PROJECT_DIR$/src/automata/resyntax/Graph.java" />
         <option value="$PROJECT_DIR$/src/DFA.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/automata/resyntax/OneOrMore.java" />
         <option value="$PROJECT_DIR$/src/EpsilonNFA.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -890,14 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DFA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
@@ -920,6 +902,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
           <caret line="84" column="83" selection-start-line="84" selection-start-column="83" selection-end-line="84" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="42" column="58" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
           <folding />
         </state>
       </provider>

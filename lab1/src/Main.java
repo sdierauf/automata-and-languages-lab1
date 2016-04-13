@@ -18,7 +18,8 @@ public class Main {
         // get regex
         // build with REParser
         // convert into Graph
-        String testRegex = "(d)+";
+        String testRegex = "(a(b)?c|(d?))+";
+
         RegExp t = null;
         try {
             t = REParser.parse(testRegex);
@@ -39,6 +40,7 @@ public class Main {
         checkMatch(testRegex, "");
         checkMatch(testRegex, "d");
         checkMatch(testRegex, "dddddddd");
+        checkMatch(testRegex, "abcdddabcabcacdddddddabd");
 
     }
 
