@@ -201,6 +201,15 @@ public class Graph<Node extends Comparable<Node>, Label extends Comparable<Label
         return children;
     }
 
+    public Node hasChildWithEdgeLabel(Node parent, Label label) {
+        for (Edge<Node, Label> e : getEdges(parent)) {
+            if (e.getData().equals(label)) {
+                return e.getDestination();
+            }
+        }
+        return null;
+    }
+
 
     /**
      * Returns a Set of strings of of all the nodes in the graph

@@ -17,7 +17,7 @@ public class OneOrMore extends RegExp {
         g.addEdge(oneEnd, EPSILON, moreStart);
         r.addToGraph(g, moreStart, moreEnd);
         g.addEdge(moreEnd, EPSILON, moreStart); // loop back case
-        g.addEdge(oneEnd, EPSILON, moreEnd); // only one case
+        g.addEdge(oneEnd, EPSILON, end); // only one case
         g.addEdge(moreEnd, EPSILON, end);
     }
 }

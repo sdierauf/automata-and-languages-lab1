@@ -13,7 +13,7 @@ public class EpsilonNFA {
 
     // Name of nodes
     public String start = "START";
-    public String end = "END"; // probably wont be used
+    public String end = "END";
 
 
     public EpsilonNFA() {
@@ -21,9 +21,9 @@ public class EpsilonNFA {
     }
 
     public void buildFromRegexTree(RegExp t) {
-        System.out.println(t.getClass());
+//        System.out.println(t.getClass());
         t.addToGraph(graph, start, end);
-        graph.printGraph();
+//        graph.printGraph();
     }
 
     public Graph<String, Character> toDFAGraph() {
@@ -44,47 +44,47 @@ public class EpsilonNFA {
             ret.addFinalState(start);
         }
         setToName.put(starterClosed, start);
-
-
+        
         todo.add(starterClosed);
 
         while(!todo.isEmpty()) {
             Set<String> states = todo.remove();
             if (!visited.contains(setToName.get(states))) {
                 String DFAStateGroupName = setToName.get(states);
-                Map<Character, Set<String>> STrans = new HashMap<>();
+                Map<Character, Set<String>> transitionFunction = new HashMap<>();
                 ret.addNode(DFAStateGroupName);
                 visited.add(DFAStateGroupName);
                 for (String s : states) {
                     for (Edge<String, Character> e : graph.getEdges(s)) {
                         if (e.getData() != RegExp.EPSILON) {
-                            Set<String> toState;
-                            if (STrans.containsKey(e.getData())) {
-                                toState = STrans.get(e.getData());
+                            Set<String> destState;
+                            if (transitionFunction.containsKey(e.getData())) {
+                                destState = transitionFunction.get(e.getData());
                             } else {
-                                toState = new HashSet<>();
-                                STrans.put(e.getData(), toState);
+                                destState = new HashSet<>();
+                                transitionFunction.put(e.getData(), destState);
                             }
-                            toState.add(e.getDestination());
+                            destState.add(e.getDestination());
                         }
                     }
                 }
-                System.out.print("STrans: ");
-                System.out.println(STrans);
-                HashMap<Character, Set<String>> STransClosed = new HashMap<>();
-                for (Character key: STrans.keySet()) {
-                    Set<String> closed = epsilonClose(STrans.get(key));
 
-                    STransClosed.put(key, closed);
-                    todo.add(closed);
+                for (Character key: transitionFunction.keySet()) {
+                    Set<String> closed = epsilonClose(transitionFunction.get(key));
                     counter++;
                     String DFAResultNode = "s" + counter;
-                    setToName.put(closed, DFAResultNode);
-                    System.out.println("closed: " + closed + " with name: " + DFAResultNode);
-                    if (closed.contains(end)) {
-                        ret.addFinalState(DFAResultNode);
+                    if (!setToName.containsKey(closed)) {
+                        todo.add(closed);
+                        setToName.put(closed, DFAResultNode);
+//                    System.out.println("closed: " + closed + " with name: " + DFAResultNode);
+                        ret.addEdge(DFAStateGroupName, key, DFAResultNode);
+                        if (closed.contains(end)) {
+                            ret.addFinalState(DFAResultNode);
+                        }
+                    } else {
+                        ret.addEdge(DFAStateGroupName, key, setToName.get(closed));
                     }
-                    ret.addEdge(DFAStateGroupName, key, DFAResultNode);
+
                 }
             }
         }

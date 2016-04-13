@@ -18,7 +18,7 @@ public class Main {
         // get regex
         // build with REParser
         // convert into Graph
-        String testRegex = "ab?c|d?";
+        String testRegex = "(d)+";
         RegExp t = null;
         try {
             t = REParser.parse(testRegex);
@@ -34,7 +34,28 @@ public class Main {
         Graph<String, Character> newg = e.toDFAGraph();
         newg.printGraph();
         DFA dfa = new DFA(newg);
+        checkMatch(testRegex, "abc");
+        checkMatch(testRegex, "ac");
+        checkMatch(testRegex, "");
+        checkMatch(testRegex, "d");
+        checkMatch(testRegex, "dddddddd");
 
+    }
 
+    public static void checkMatch(String regex, String input) {
+        RegExp t = null;
+        try {
+            t = REParser.parse(regex);
+//            System.out.println(t);
+        } catch (Exception e) {
+            System.out.println("there was an error");
+        }
+        if (t == null) {
+            return;
+        }
+        EpsilonNFA e = new EpsilonNFA();
+        e.buildFromRegexTree(t);
+        DFA dfa = new DFA(e.toDFAGraph());
+        System.out.println(regex + " MATCHES " + input + ": " + dfa.match(input));
     }
 }
