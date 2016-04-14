@@ -1,0 +1,27 @@
+  /\/\/ mostlystollenfromwikipedia	FAIL
+ \      axel-boldt-chirstmas@regex:com	PASS	 \      axel-boldt-chirstmas@regex:com
+  \     aa:bbb:ccc@abc:abca:org	PASS	  \     aa:bbb:ccc@abc:abca:org
+  /\/\/ abc:example:com	FAIL
+   \    niceandsimple@example:com	PASS	   \    niceandsimple@example:com
+    \   very:common@example:com	PASS	    \   very:common@example:com
+     \  a:little:lengthy:but:fine@dept:example:com	PASS	     \  a:little:lengthy:but:fine@dept:example:com
+      \ disposable:style:email:withsymbol@example:com	PASS	      \ disposable:style:email:withsymbol@example:com
+      / other:email-with-dash@example:com	PASS	      / other:email-with-dash@example:com
+  /\/\/ @	FAIL
+     /  "much:more unusual"@example:com	PASS	     /  "much:more unusual"@example:com
+    /   "very:unusual:@:unusual:com"@example:com	PASS	    /   "very:unusual:@:unusual:com"@example:com
+   /    "very:{},;<>[]\":very:\"very@\\ \"very\":unusual"@strange:example:com	PASS	   /    "very:{},;<>[]\":very:\"very@\\ \"very\":unusual"@strange:example:com
+  /     postbox@com top-level domains are valid hostnames	PASS	  /     postbox@com
+ /      admin@mailserver1 local domain name with no tld	PASS	 /      admin@mailserver1
+/       !#$%&'-/=^_`{}~@example:org	PASS	/       !#$%&'-/=^_`{}~@example:org
+  /\/\/ "test@"@	FAIL
+\       "<>[],;@\\\"!#$%&'-/=^_`{} ~:a"@example:org	FAIL
+ \      "localhost:1234"@[127:0:0:1]	FAIL
+  \     " "@example:org space between the quotes	PASS	  \     " "@example:org
+   \    invalid email addresses with valid em@il address substrings	PASS	   \    invalid email addresses with valid em@il
+    \   a@b@c@example:com	PASS	    \   a@b@c@example:com
+     \  just"not"right@example:com	PASS	     \  just"not"right@example:com
+      \ this\ still\"not\\allowed@example:com	PASS	      \ this\ still\"not\\allowed@example:com
+      / sum  a123a@"a"@tehis:@ok@com	PASS	      / sum  a123a@"a"@tehis:@ok@com
+     /  -comashostnamew00t@com	PASS	     /  -comashostnamew00t@com
+    /   comcomcom@comcomcom	PASS	    /   comcomcom@comcomcom

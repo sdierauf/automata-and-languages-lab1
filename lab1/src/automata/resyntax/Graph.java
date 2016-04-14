@@ -37,16 +37,16 @@ import java.util.*;
 public class Graph<Node extends Comparable<Node>, Label extends Comparable<Label>> {
 
     private final boolean DEBUG = false;
-    private HashMap<Node, HashSet<Edge<Node, Label>>> graph;
+    private HashMap<Node, TreeSet<Edge<Node, Label>>> graph;
     public Set<Node> finalStates;
     public Set<Node> literals;
-
+    public Set<Character> alpha;
     /**
      * Constructs an empty graph
      * @effects Constructs an empty graph
      */
     public Graph() {
-        this.graph = new HashMap<Node, HashSet<Edge<Node, Label>>>();
+        this.graph = new HashMap<Node, TreeSet<Edge<Node, Label>>>();
         checkRep();
         this.finalStates = new HashSet<>();
         this.literals = new HashSet<>();
@@ -83,7 +83,7 @@ public class Graph<Node extends Comparable<Node>, Label extends Comparable<Label
         if (graph.containsKey(data)) {
             return false;
         } else {
-            this.graph.put(data, new HashSet<Edge<Node, Label>>());
+            this.graph.put(data, new TreeSet<Edge<Node, Label>>());
             checkRep();
             return true;
         }
@@ -130,9 +130,9 @@ public class Graph<Node extends Comparable<Node>, Label extends Comparable<Label
             throw new IllegalArgumentException();
         } else {
             if (!graph.containsKey(childNode)) {
-                this.graph.put(childNode, new HashSet<Edge<Node, Label>>());
+                this.graph.put(childNode, new TreeSet<Edge<Node, Label>>());
             }
-            HashSet<Edge<Node, Label>> edges = graph.get(parentNode);
+            TreeSet<Edge<Node, Label>> edges = graph.get(parentNode);
             Edge<Node, Label> newEdge = new Edge<Node, Label>(childNode, edgeLabel);
             boolean success = edges.add(newEdge);
             checkRep();
@@ -306,7 +306,7 @@ public class Graph<Node extends Comparable<Node>, Label extends Comparable<Label
                     assert(e.getData() != null);
                     assert(e.getDestination() != null);
                     //all edges point to valid nodes
-                    assert(this.graph.get(e.getDestination()) instanceof HashSet); //should be a hashset
+                    assert(this.graph.get(e.getDestination()) instanceof TreeSet); //should be a hashset
                 }
             }
         }

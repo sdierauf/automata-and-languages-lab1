@@ -1,4 +1,3 @@
-import automata.resyntax.Closure;
 import automata.resyntax.Edge;
 import automata.resyntax.RegExp;
 import automata.resyntax.*;
@@ -14,16 +13,22 @@ public class EpsilonNFA {
     // Name of nodes
     public String start = "START";
     public String end = "END";
+    public Set<Character> alphabet;
 
 
     public EpsilonNFA() {
         graph = new Graph<>();
+
     }
 
     public void buildFromRegexTree(RegExp t) {
 //        System.out.println(t.getClass());
-        t.addToGraph(graph, start, end);
-//        graph.printGraph();
+        t.addToGraph(graph, start, end, alphabet);
+//        graph.printGraph()
+    }
+
+    public void setAlphabet(Set<Character> a) {
+        this.alphabet = a;
     }
 
     public Graph<String, Character> toDFAGraph() {
@@ -76,8 +81,8 @@ public class EpsilonNFA {
                     if (!setToName.containsKey(closed)) {
                         todo.add(closed);
                         setToName.put(closed, DFAResultNode);
-//                    System.out.println("closed: " + closed + " with name: " + DFAResultNode);
                         ret.addEdge(DFAStateGroupName, key, DFAResultNode);
+
                         if (closed.contains(end)) {
                             ret.addFinalState(DFAResultNode);
                         }
@@ -94,7 +99,6 @@ public class EpsilonNFA {
     }
 
     public Set<String> epsilonClose(Set<String> states) {
-
         Queue<String> todo = new LinkedList<>();
         Set<String> ret = new HashSet<>();
         ret.addAll(states);

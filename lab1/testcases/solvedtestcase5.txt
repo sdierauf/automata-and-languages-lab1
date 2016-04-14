@@ -1,0 +1,101 @@
+ \     acabecdabeaecadcaaaededabeccdeddbedcdeabcacdddeeecdeccdbbaae	PASS	 \     acabecdabeaecadcaaaededabeccdeddbedcdeabc
+ /\/\/ acebaebaabeaaacebdcceabbdbeeebcacecedbbadaadccdaadccdbbaedcd	FAIL
+ /\/\/ eacaddcadacbeebbbcdedadcccdadaaaadeebdcdcbbedeebdbecaddcebdb	FAIL
+ /\/\/ cbbaabbdcccaacbbeaaebcbdebcddecbbceddcdeebddabaaeeedacbebedd	FAIL
+  \    bacbabcedeebcbecbdebaabbeaeecacbcbddecdabdcedcdeddddbdaadecd	PASS	  \    bacbabc
+   \   dbceebcbbbecbcbdeebcaceadeadbcadeebeeeebadecadbbadbccddacdac	PASS	adbccdd
+ /\/\/ beacdecbbedececdcbdddbceebdbddbeeceaaadeacbababdcbecabdaaadb	FAIL
+    \  cdbabcecbeecceeebaecdedbdeaacaeadebdbbcadaaeccecdaccedaebcba	PASS	    \  cdbabc
+     \ ebbdcbddddaddebabebddacdddccccaeadbdbdabceabcdecceecbceaeeac	PASS	     \ ebbdcbddddaddebabebddacdddccccaeadbdbdabceabcd
+ /\/\/ cbedaeeeecaacbccbcdacacbcbdbacccbadeaadabdbeacbeadeaabbcdcae	FAIL
+      \cbbccdccaacaaaddeabadaeabcacbcacbecebbcdaebebaedeebbaedaddee	PASS	      \cbbccdccaacaaaddeabadaeabc
+ /\/\/ aeadcbcaeeaebaeddabaeecbbacabbabbcaebbebbaccaedaabdadcbddbce	FAIL
+ /\/\/ eadbeeabebeedbddddeebdeedbbbadeccddbdeeecdccdcecbcddecaacbca	FAIL
+      /cededdacedbccabcedeeabbbcebaeabddebbbebbecaadcdaaaccededbddb	PASS	      /cededdacedbccabc
+ /\/\/ dcbcecbbecececaebdbdccbcdaebbedecadeebebbdcbadacbaedbbcacacb	FAIL
+ /\/\/ dabeacedddeaaaacebdbdcabebecabddabeaeecbabbdcaccbbebaecebeac	FAIL
+ /\/\/ dadbedbbaabeeddcabdcededecdaaedeecbdddbecacdedecebccdcdadeed	FAIL
+ /\/\/ dababbeaedbccceaabdddacdcddcbcbdeaacbebeaaaddeeaeaeadceededd	FAIL
+ /\/\/ debbbbebddedcaeeabebbdaeebaddaeadaceabddcbeaacbbbdadeecccedb	FAIL
+ /\/\/ acdbbdeccdacdbdaabaaebcaaeebcacbcecbacbddbaaaabaadbccdbacddd	FAIL
+ /\/\/ adbeaacbbeeccacbcceccccdeeecbbdeedabbadaaebbadbeecdbecdabbeb	FAIL
+     / cdabdcadbeaddaeeddabadbdacbcabaedcbcedabcbbbceccbaecccbcccde	PASS	     / cdabdcadbeaddaeeddabadbdacbcabaedcbcedabc
+ /\/\/ caaebbdbeedbbdddcdbecbddcaecabbedbbcbaeccecaedbdadacdcdabedd	FAIL
+    /  bcbaeabcbaacbdbddcdabecdcbcbeccdcebbeddbdcecbcdaaeeccabdecce	PASS	    /  bcbaeabc
+ /\/\/ cadeadaebceadbdbccaaecbebdcbdaaddabdeeaebdbeaabbeebebebbdcee	FAIL
+ /\/\/ acadcbcbacabdbbeebdbaaebebddcbbbabdeccccbcacbcbebcbdcceeacde	FAIL
+   /   ecdeeaccdecccbccceaebddceaeebdbdbabdeecaeeecadabcdaedddeaebc	PASS	   /   ecdeeaccdecccbccceaebddceaeebdbdbabdeecaeeecadabcd
+  /    cebdeacdeabdeeabdbbcabcedebabbcddebdcedabaccdadbcebbdeddeacc	PASS	  /    cebdeacdeabdeeabdbbcabc
+ /     ccbbcbdbccacecdeaeedcbcddacaabccdebeadbebeaaaababceeecdcdcad	PASS	 /     ccbbcbdbccacecdeaeedcbcddacaabccdebeadbebeaaaababc
+ /\/\/ cebcebdcbccbceddaaaecccacecedbdacabaceabdadcceabebadcdbcdccd	FAIL
+ /\/\/ ecaeaedebabdeeeaeaeacdbebcadabdeeadbdbddacbeaedcacbcbdbedaae	FAIL
+ /\/\/ bcdcaccaecdeacecbeeebbabddebbeddecbbedbebedbbbbacebdcedddaac	FAIL
+ /\/\/ dededdaceaaacebadabbdbebececbcbdbcdbdbecaeadedcccbecceaeccca	FAIL
+ /\/\/ ceebaebdbaebebdcbaeacddedddcecccccacdaccbcadaadacecbbaabbbdb	FAIL
+ /\/\/ dbdaddeacbbadcbdccbbccebbceaeedccddcaeedbecdaaeacaedbcdddebc	FAIL
+/      ddceeebeccdcabbabbcaebdeeccddbddaaedaddcaaeeebaeabcdcecdabcd	PASS	/      ddceeebeccdcabbabbcaebdeeccddbddaaedaddcaaeeebaeabcdcecdabcd
+\      dadbbaceabcecbdbdebccceadbeecddacebaebecbbdaadcddbebbddeabdc	PASS	\      dadbbaceabc
+ /\/\/ ebaacbbbedcbedaaaabdabeeaeadadeeeaeeabaadcbecabaabeeaceebdbb	FAIL
+ /\/\/ aeeabddabdecbacdaeaddadbadadedaccaddddeadedbdbeeeabeedcecded	FAIL
+ \     acbcbccddaececdeadcabeecedcabceeecbaadcceccdcbdacccacbcbeaae	PASS	 \     acbcbccddaececdeadcabeecedcabc
+ /\/\/ edbcbdceedcebdbdbaadbeacedbcdaaedcedaeecdeaebabdcbbdcdbdeabe	FAIL
+ /\/\/ bbdcccbabeccacdcbdaadaeeadcadedbacdcacddcdabeddacdcebdedbbba	FAIL
+ /\/\/ bddaaeeeacedeaeadbdcaedbcbaedbcccbabbabaddeeabbcceaecbdaaaed	FAIL
+ /\/\/ bdedaedaadceaabedaedaecbaaddbebcbaceebaedabdcaddccadbaabddbb	FAIL
+ /\/\/ ddeeaaedaebbcdeaaccbccaadcdccdcbbdbdcaabdecdcbbebcccebdaebdc	FAIL
+ /\/\/ aebabababdbdacadddbcaddccebabddccdcdaeeeadceaceaecaedabecbea	FAIL
+ /\/\/ eababebaeddeadbbbbaacaeeceeacecedcdddbcadbcedddcaaacebdccdde	FAIL
+ /\/\/ bccaeaebebecadaedeacebcdccbcaaadcdddcaaaeebdcabbbddebcddeeae	FAIL
+  \    cbcacebabcbbdcaedaebcbacadeebaeecbbcecddabebacecdeceecaebded	PASS	  \    cbcacebabc
+   \   cbacdcdecdacaadbbcceabcedbaeecedceddcadbebceddebaeeadcebcede	PASS	   \   cbacdcdecdacaadbbcceabc
+    \  aaeeaebedebcdccedcecaabaceaacbcadaedaabccdabceeecccaedebecac	PASS	    \  aaeeaebedebcdccedcecaabaceaacbcadaedaabccdabc
+     \ cdaaeabdbcbceebcbdabaeaaecacaebaceedebedacadadabaaaabccececb	PASS	     \ cdaaeabdbcbceebcbdabaeaaecacaebaceedebedacadadabaaaabc
+ /\/\/ caeedccdcaddaeeedbbacbeeecdabdbeebdccaadebdededbbebbbcbedbcc	FAIL
+      \bbaebdbecdddabbbaabcbaeccedbbbcebbcacdaceeaaecdadaeceadadaaa	PASS	      \bbaebdbecdddabbbaabc
+      /eabbaaccabdbabcecdeaceabbaccebceabcdbdaccecedbcdcabdddcbdcda	PASS	      /eabbaaccabdbabcecdeaceabbaccebceabcd
+ /\/\/ eaadddbcbacbdeebacdbedaecdadcecebbddbdacdcababdecdcacccabdbb	FAIL
+     / ceaaaabdbadabdabcbeacdccadbedbdcbedebaaacbebecebbacbbdeeacdb	PASS	     / ceaaaabdbadabdabc
+ /\/\/ ddcbabdcebddecedadacdbbeceadcebaeacebcdddcbeacbecccebebacccd	FAIL
+ /\/\/ bebccdbddcbeedbedddddcbccaeabaceecaaedbdceacebedeaedcdcdcbbd	FAIL
+ /\/\/ dbdeedacaccaecebedbaeaaabadbbddaeeeeebdeccecaaabbbaceabaaccb	FAIL
+ /\/\/ cdbdbcbeaddeedbcaacbdbeabaadbdbeeaaccacaeeaaccacabdbaebddcbe	FAIL
+ /\/\/ adddccbcedeeeeadcbecebedeaaaabadcbaadebaeabbdaccbdbadeeccbed	FAIL
+ /\/\/ ceaddadecacdadadbdadcbebdaddecbbaaebaecbccebbeaacabbcedeabad	FAIL
+ /\/\/ bdbbbeadcaeabeacceeacbaabaedabbcbeeddbddadedcbbbeadeebedbadd	FAIL
+    /  aeacebbaaeeeccdebccaaabceebacdeeccebebdaeddbdedacbdeceeecabe	PASS	    /  aeacebbaaeeeccdebccaaabc
+ /\/\/ edbccdabeceedcccabdcdccbbdacaeebeaccbbbbbaeaabdddccddebacbae	FAIL
+   /   aeaabaedabceccbeaecbdbaadddaaaebececdeaabeacaacdadadaadccbdb	PASS	   /   aeaabaedabc
+ /\/\/ bdcceaacbddaccacbcaacdceecbdaecadccbaccedbaceaaaecaaccccaddd	FAIL
+  /    abceeababeececccbbeaeebedbeaeebeddbebcaaaeacdbedbadabbbabbcb	PASS	  /    abc
+ /\/\/ aedaeecdcddedeaecaaacababadccacdccacccbbebbedacaaeadebedbddc	FAIL
+ /     adbbabddbdbbdbcbcaebcceacdeeeabcccbabccabcdababebbcadcbcedec	PASS	 /     adbbabddbdbbdbcbcaebcceacdeeeabcccbabccabcd
+ /\/\/ dbeddbdceacabaeabeadedcebcdcecdecbababacecebeddcbacbacaedabb	FAIL
+/      ecbeebadcbeccabbbdacdcabaeadaebbdbbbddeeddadeacbdcedceeccced	PASS	acbdced
+ /\/\/ debbcdbcbaceecedbbbabebdaacedebadbdbbbcebebecdacdecacdebeede	FAIL
+\      beceaababcedeeabbdacaddaceccebacbdebceacddbabebabccabaeaccae	PASS	\      beceaababcedeeabbdacaddaceccebacbdebceacddbabebabc
+ \     ddadaacdaacbbcbbcdbedebdaeaddcadacbdceadbacbdbeabceadcbedbed	PASS	 \     ddadaacdaacbbcbbcdbedebdaeaddcadacbdceadbacbdbeabc
+  \    ebeccaccccbacaabcbbcabcdbcdcdaeaddbaddaecbabdbdabaecdacadeee	PASS	  \    ebeccaccccbacaabcbbcabcd
+   \   aebbbecddddbaeccdaabdddaabaadeeeecbadabaeebcedccabcdddbcaeec	PASS	   \   aebbbecddddbaeccdaabdddaabaadeeeecbadabaeebcedccabcddd
+ /\/\/ beaeceaceadceccedebbeeecababdbbaadaeebdcbdeedacebbcdbbaacecc	FAIL
+ /\/\/ eeedcaadacdcebcbcbbeaabaedaadbdeedbccbcaccbeeaedebcebbbaecbb	FAIL
+ /\/\/ ceedceeddedbdbadbbaaecdcedabecccabaaeccecaadbdecbdecbeabedea	FAIL
+ /\/\/ baaeceedadeeabeebecccdbabdaecaaccceedcbcddbebabdbbdeadccbebd	FAIL
+ /\/\/ dceaeecdaaeeaccacaacdeaaecddedaaeccccccabdbdaabeadccbabdcdca	FAIL
+    \  eeccdbcdbeeccabcdcabdeadaaadbdadaddeddadcbdadaddbcacbcaadecd	PASS	    \  eeccdbcdbeeccabcd
+ /\/\/ eeddedecabedcbeacecbbcedbccededcdaeaaacecedbbacddedccbceadbb	FAIL
+     \ ddbabacbaabbbacdeabcbdededcddacdeebaddcbddadcaccbeebaadddeae	PASS	     \ ddbabacbaabbbacdeabc
+ /\/\/ adccaddedeebcdcdebaadecccdbbcbbcbbdbeaddcaadadcdaccdbcbccdcd	FAIL
+ /\/\/ ccaaebddeccbeebbebccbaebdbdcddeeeadddadbbdeadbaaeaebebcbdbaa	FAIL
+ /\/\/ acbdbdacbcadebbaabebeecddcdcddeabdcedebabeeceaeebcecddcbcdcb	FAIL
+      \eaedbeabccaadbaaedacecdbcbeaebeadbacebadaeeeabcaebbbecbeddbe	PASS	      \eaedbeabccaadbaaedacecdbcbeaebeadbacebadaeeeabc
+      /edccaeeabcaeaddeeebbabbdabadabeeccbdeeeaacaceddacdddeaecedde	PASS	      /edccaeeabc
+     / ccaaebbcddbdedbaeedcdecedeadceccbaebdcbecededbbeecdceaebdeee	PASS	aebbcdd
+ /\/\/ dcbadcacaedccccbdcaccccedbabddeaedddbdbcbcdcecbdcabaecbdbbdc	FAIL
+ /\/\/ eabdeeecdaceeeacacabbadccebaaaaacaceadedebeeedbddceababbadeb	FAIL
+ /\/\/ eacdceeeebedcaaadcadbcbeebaaaaedcccabbdecececebdbdaddbdbacea	FAIL
+ /\/\/ eecbeeebecdbebcacbebdbdbccaecdbdbeaacddeecdecabbdbeeadddebdd	FAIL
+    /  bdcadbecaeabccbebdcdccbdebabaabbcbebaeadecdababaadddaaaababd	PASS	    /  bdcadbecaeabc
+ /\/\/ dbdbdacebcaaaeebdbadedcdceaeaebecececcdcbeeedbaebceebbebeabd	FAIL
+   /   dccddeedaededbadcdaaaabdcaaaecaabebcdbabccabcebadbebbebddbcb	PASS	   /   dccddeedaededbadcdaaaabdcaaaecaabebcdbabccabc
+ /\/\/ cdddedacaeeabaccecccbaabbeecbbabdacdbccdcaaddbcdacecbeeadbca	FAIL
+	FAIL

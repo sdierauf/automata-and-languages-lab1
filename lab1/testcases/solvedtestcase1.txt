@@ -1,0 +1,31 @@
+ \     cbbccababbbbcaabacaaaccacacccabacccccbca	PASS	 \     cbbccabab
+ /\/\/ acaabbbabccacacabbbccccabaccbbaabcbcaccb	FAIL
+  \    abbcbcabbcbccbccaabbacacccccabbbbbbbabab	PASS	  \    abbcbcabbcbccbccaabbacacccccabbbbbbbabab
+   \   cbcacaabccbaaaccbccaaaacaaccaccaabcababb	PASS	   \   cbcacaabccbaaaccbccaaaacaaccaccaabcabab
+    \  bbbacabbaaccaabcccabaacababccccbcbbcacbc	PASS	    \  bbbacabbaaccaabcccabaacabab
+ /\/\/ cbbbcbbacbbcbabccccbbbaaaaabbccaccccbbac	FAIL
+ /\/\/ bbaabaacacbabbacccacaaacbaabccabcccccaab	FAIL
+ /\/\/ bcaaabcbbacabcbbabacbcccbaabaabcccabbacb	FAIL
+ /\/\/ bbabbaccbbaccabbbbcccabbbaaaaabcaccbcaaa	FAIL
+ /\/\/ acbaaabbbacccaaccbaacabbcbbbbcbbcbbacaba	FAIL
+ /\/\/ bcacbbaacbbbacbcbabaccbcbccaaacbcbbabbaa	FAIL
+ /\/\/ cbbcbbbcabaabcaaabcbacaaaaabaccacbacbbba	FAIL
+ /\/\/ babcacbaabbcbcbbccacccbccabacbcabccaaabb	FAIL
+ /\/\/ caacacaaaccbcbbbbbabbbccbbbbbbaacabbabca	FAIL
+     \ cacaccabcacacabcacacaabbabaaabbcaaababac	PASS	     \ cacaccabcacacabcacacaabbabaaabbcaaabab
+      \cababacbbcaabccaaabaabcbacccaccbcacacaaa	PASS	      \cabab
+      /bcaababbbbbcccacbccaacaccabcaaababbccccc	PASS	      /bcaababbbbbcccacbccaacaccabcaaabab
+ /\/\/ bcaaabbbacacbccaaabcacabcbbbcabaaabbbccb	FAIL
+ /\/\/ bcaccbcbabcaccbaacbbbbaaaacbabbabacbabaa	FAIL
+ /\/\/ acbcbcacccaaaacacacbbcabcaaaacaacaabacca	FAIL
+     / abcbabccabaacababaccbbcacbacacaccccaabcb	PASS	     / abcbabccabaacabab
+ /\/\/ cbbcaaacccccccaaaccbacbabcbbcbbccbcabcaa	FAIL
+    /  accbabaabaaccaacaababcbccbcbbaccabaacaaa	PASS	    /  accbabaabaaccaacaabab
+ /\/\/ cbbabaaabaaccaabcaccabacbaacccbbcccaabac	FAIL
+ /\/\/ aacabcbccbbaccabaacbaacbbbcaccaacccbaaba	FAIL
+   /   abababcabbcaaaccaaacacaabbbcaaaaababcbac	PASS	   /   abababcabbcaaaccaaacacaabbbcaaaaabab
+  /    accabccbaccabbcbbabcbbaccbcccbcabacbabab	PASS	  /    accabccbaccabbcbbabcbbaccbcccbcabacbabab
+ /\/\/ caacbbacbacaaaacaccaaaccbaccacbaaaaaaaca	FAIL
+ /\/\/ bcccabccbacbaacbbcacbccacbbccbacccbcbaab	FAIL
+ /     aacccbbabbbbacccccaabcaaacbcababbccacaab	PASS	 /     aacccbbabbbbacccccaabcaaacbcabab
+	FAIL

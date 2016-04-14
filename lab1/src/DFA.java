@@ -19,7 +19,7 @@ public class DFA {
         this.graph = g;
         this.finalStates = g.finalStates;
         this.alphabet = new HashSet<>();
-        determineAlphabet();
+//        determineAlphabet();
     }
 
     public void determineAlphabet() {
@@ -42,17 +42,21 @@ public class DFA {
         return finalStates.contains(curNode);
     }
 
-    public boolean nonTerminalMatch(String input) {
+    public String nonTerminalMatch(String input) {
         String curNode = start;
         for (int i = 0; i < input.length(); i++) {
-            curNode = graph.hasChildWithEdgeLabel(curNode, input.charAt(i));
             if (curNode == null) {
-                return false;
+                return null;
             }
             if (finalStates.contains(curNode)) {
-                return true;
+                return input.substring(0, i);
             }
+            curNode = graph.hasChildWithEdgeLabel(curNode, input.charAt(i));
         }
-        return finalStates.contains(curNode);
+        if (finalStates.contains(curNode)) {
+            return input;
+        } else {
+            return null;
+        }
     }
 }

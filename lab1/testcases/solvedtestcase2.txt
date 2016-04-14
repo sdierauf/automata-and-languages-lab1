@@ -1,0 +1,41 @@
+ \     bbfdfffedccabcfeaceb	PASS	 \     bbfdfffedccab
+  \    dbaaeaaaedfcdebfadfe	PASS	cde
+   \   bafdefaabfeeebabddda	PASS	   \   bafdefaabfeeebab
+ /\/\/ eccdcacaaffddedfcfde	FAIL
+    \  bcbffbdecedabbbacfee	PASS	    \  bcbffbdecedab
+     \ ebadfebcdffdabcebafb	PASS	     \ ebadfebcdffdab
+      \eaabdbebafeeaacedfdd	PASS	      \eaab
+      /eabbdcffbbbccbafffee	PASS	      /eab
+ /\/\/ cbbecaafebdecdfaebfd	FAIL
+ /\/\/ fbdeeacaacfdeeddbbda	FAIL
+     / edbcdbabdcbedebbebca	PASS	     / edbcdbab
+ /\/\/ ddfeaadceeefdbeecfed	FAIL
+ /\/\/ baedafcdafdbebcaaadd	FAIL
+ /\/\/ aebdaecaadcacbddfecd	FAIL
+ /\/\/ ebcfadcdbdcdccffddde	FAIL
+    /  faaaaefedceabbffaeaf	PASS	    /  faaaaefedceab
+   /   cdeecfcdacfbefffdfac	PASS	cde
+ /\/\/ bbbcceffedcbdbffdcfd	FAIL
+  /    ffeeabecbfdcbeedebba	PASS	  /    ffeeab
+ /\/\/ dbebffadccdfaaddbebc	FAIL
+ /\/\/ fcbbceaafeebcbedfbfe	FAIL
+ /     ddaacdedeecfadbbdebe	PASS	cde
+ /\/\/ fdbacacfeffcdcbdeeef	FAIL
+/      cccbadebcfabefdabdff	PASS	/      cccbadebcfabefdab
+\      cbcecbfccbedcfabdebe	PASS	\      cbcecbfccbedcfab
+ /\/\/ caddffccccfffbdffbed	FAIL
+ /\/\/ aadeacecbacccecdbbbe	FAIL
+ /\/\/ bccbffffdecfefeaccba	FAIL
+ \     afefacfdbdbcdecebbad	PASS	cde
+  \    ebefabdfecaffbccbfed	PASS	  \    ebefab
+ /\/\/ ffdddbbdfffdccbbddda	FAIL
+ /\/\/ bbfdbeccaccafaafddfb	FAIL
+ /\/\/ dddefddfbdeeffddcacd	FAIL
+ /\/\/ fcdddcefbfebefdfdfdf	FAIL
+   \   cccaeaccccbabdbeceaa	PASS	   \   cccaeaccccbab
+ /\/\/ dbbcadaaaebcfcbaddba	FAIL
+ /\/\/ bdfdfdebcebcbccebfaa	FAIL
+    \  eeadeababebbbfbdfdec	PASS	    \  eeadeabab
+     \ dfaabbfecfafcaeaaafd	PASS	     \ dfaab
+      \bafcebcbabecafacbfba	PASS	      \bafcebcbab
+	FAIL

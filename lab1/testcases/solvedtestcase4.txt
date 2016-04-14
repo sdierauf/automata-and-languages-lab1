@@ -1,0 +1,41 @@
+ /\/\/ dabcbbbcaacaeaccdddd	FAIL
+ \     acadedbecccbaaeeccdb	PASS	 \     acadedbecccbaaeeccdb
+  \    ebdacbadabdbbcddceac	PASS	  \    ebdacbadabdbb
+   \   dbeceaeeaacceeabecbd	PASS	   \   dbeceaeeaacceeabecb
+    \  beabcadcadeaedbedcce	PASS	    \  beabcadcadeaedb
+ /\/\/ cebeadbacceceeccdaea	FAIL
+ /\/\/ cbddedeabdbcddbbbebd	FAIL
+ /\/\/ eebcbeeddbedcdbddcae	FAIL
+     \ badeaddeaadaaeacdabe	PASS	     \ badeaddeaadaaeacdab
+      \ebbedbebdeaebeebaaeb	PASS	      \ebbedbebdeaebeebaaeb
+ /\/\/ bdeedcbaabeacecaeeaa	FAIL
+      /cdeccaebaaacceebbcca	PASS	      /cdeccaebaaacceebb
+     / eeadabdabacabeaeddce	PASS	     / eeadabdabacab
+ /\/\/ debdbbbcbeddbbdecead	FAIL
+    /  bebcdeeacabeabdedcbc	PASS	    /  bebcdeeacabeabdedcb
+   /   beacbcbaaaaacaabcaee	PASS	   /   beacbcbaaaaacaab
+  /    ceeaebccecaedbcbebbc	PASS	  /    ceeaebccecaedbcbebb
+ /     dcaabaabedadbddccbab	PASS	 /     dcaabaabedadbddccbab
+ /\/\/ eedcbcdcbcebcdaadade	FAIL
+/      cceeddbeaeecececdabb	PASS	/      cceeddbeaeecececdabb
+ /\/\/ ecceccedbebcaaedddcc	FAIL
+\      dcabdabdacaceeaceeeb	PASS	\      dcabdabdacaceeaceeeb
+ /\/\/ eeeebdecbdaededcecba	FAIL
+ \     aaaaaacccdedcacceecb	PASS	 \     aaaaaacccdedcacceecb
+ /\/\/ eccebcdddbccdecbdccd	FAIL
+  \    dbbdeddcccabadbedaee	PASS	  \    dbbdeddcccabadb
+   \   bdedcbaebaeedacdedcb	PASS	   \   bdedcbaebaeedacdedcb
+    \  abebbedaadacaeceebaa	PASS	    \  abebbedaadacaeceeb
+     \ cbaedcecbacbdcbbcbeb	PASS	     \ cbaedcecbacbdcbbcbeb
+      \dbdcbedacccbaeddbbda	PASS	      \dbdcbedacccbaeddbb
+ /\/\/ debbbecdacccbcbecccd	FAIL
+      /ccbbbabbbbbacbbdaaab	PASS	      /ccbbbabbbbbacbbdaaab
+     / cecaeabdccaabbbbccba	PASS	     / cecaeabdccaabbbbccb
+    /  bcadaeaeccdebcddddca	PASS	    /  bcadaeaeccdeb
+ /\/\/ dbbbbdacbdcedebaecdc	FAIL
+   /   cdcbeeeaeeaacdaccbbe	PASS	   /   cdcbeeeaeeaacdaccbb
+  /    ebcdadbdbddaeaaddacb	PASS	  /    ebcdadbdbddaeaaddacb
+ /     adcdebdcabebcddcbbeb	PASS	 /     adcdebdcabebcddcbbeb
+ /\/\/ ddcccbcbdecebadbbdca	FAIL
+/      bcbadeebebdccecaedeb	PASS	/      bcbadeebebdccecaedeb
+	FAIL

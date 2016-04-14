@@ -1,0 +1,14 @@
+{
+  "name": "testcases",
+  "version": "1.0.0",
+  "description": "Some of the testcases are concrete applications of regular patterns:",
+  "main": "solveTests.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^7.0.3"
+  }
+}

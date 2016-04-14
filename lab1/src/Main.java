@@ -79,7 +79,11 @@ public class Main {
         if (fileScanner == null) {
             return;
         }
-        String alphabet = fileScanner.nextLine();
+        String alphabetString = fileScanner.nextLine();
+        Set<Character> alphabet = new HashSet<Character>();
+        for (char c: alphabetString.toCharArray()) {
+            alphabet.add(c);
+        }
         String regex = fileScanner.nextLine();
         String substringRegex = "((.?)+)"+regex;
         RegExp t = null;
@@ -93,15 +97,17 @@ public class Main {
             return;
         }
         EpsilonNFA nfa = new EpsilonNFA();
+        nfa.setAlphabet(alphabet);
         nfa.buildFromRegexTree(t);
+        nfa.graph.printGraph();
         DFA dfa = new DFA(nfa.toDFAGraph());
         dfa.graph.printGraph();
-//        System.out.println("Matching ");
+        System.out.println("Matching " + substringRegex);
         while (fileScanner.hasNextLine()) {
             String input = fileScanner.nextLine();
-            boolean matches = dfa.nonTerminalMatch(input);
-            if (matches) {
-                System.out.println(input + "\tPASS");
+            String matches = dfa.nonTerminalMatch(input);
+            if (matches != null) {
+                System.out.println(input + "\tPASS:\t" + matches);
             } else {
                 System.out.println(input + "\tFAIL");
             }

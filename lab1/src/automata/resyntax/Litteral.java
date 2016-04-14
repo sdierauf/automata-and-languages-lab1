@@ -1,5 +1,7 @@
 package automata.resyntax;
 
+import java.util.Set;
+
 public class Litteral extends RegExp {
     public final Character c;
     public Litteral(Character c) {
@@ -7,7 +9,7 @@ public class Litteral extends RegExp {
     }
 
     @Override
-    public void addToGraph(Graph g, String start, String end) {
+    public void addToGraph(Graph g, String start, String end, Set<Character> alphabet) {
         // assume start and end are already in the graph
         String literalStart = newQ();
         String literalEnd = newQ();

@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b49d0f8-1df1-4a0f-98b5-e2981e547c24" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/automata/resyntax/ComparableSet.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab1/DFA.class" afterPath="$PROJECT_DIR$/out/production/lab1/DFA.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab1/EpsilonNFA.class" afterPath="$PROJECT_DIR$/out/production/lab1/EpsilonNFA.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab1/Main.class" afterPath="$PROJECT_DIR$/out/production/lab1/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab1/automata/resyntax/Dot.class" afterPath="$PROJECT_DIR$/out/production/lab1/automata/resyntax/Dot.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab1/automata/resyntax/Graph.class" afterPath="$PROJECT_DIR$/out/production/lab1/automata/resyntax/Graph.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DFA.java" afterPath="$PROJECT_DIR$/src/DFA.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EpsilonNFA.java" afterPath="$PROJECT_DIR$/src/EpsilonNFA.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/automata/resyntax/Closure.java" afterPath="$PROJECT_DIR$/src/automata/resyntax/Closure.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/automata/resyntax/Concatenation.java" afterPath="$PROJECT_DIR$/src/automata/resyntax/Concatenation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/automata/resyntax/Dot.java" afterPath="$PROJECT_DIR$/src/automata/resyntax/Dot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/automata/resyntax/Graph.java" afterPath="$PROJECT_DIR$/src/automata/resyntax/Graph.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/automata/resyntax/Litteral.java" afterPath="$PROJECT_DIR$/src/automata/resyntax/Litteral.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/automata/resyntax/OneOrMore.java" afterPath="$PROJECT_DIR$/src/automata/resyntax/OneOrMore.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/automata/resyntax/RegExp.java" afterPath="$PROJECT_DIR$/src/automata/resyntax/RegExp.java" />
@@ -38,8 +44,43 @@
       <file leaf-file-name="Union.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/automata/resyntax/Union.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state relative-caret-position="291">
+              <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EpsilonNFA.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/EpsilonNFA.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1170">
+              <caret line="82" column="61" selection-start-line="82" selection-start-column="61" selection-end-line="82" selection-end-column="61" />
+              <folding>
+                <element signature="e#641#642#0" expanded="true" />
+                <element signature="e#674#675#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DFA.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DFA.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-39">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dot.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/automata/resyntax/Dot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -48,61 +89,37 @@
       <file leaf-file-name="ZeroOrOne.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/automata/resyntax/ZeroOrOne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state relative-caret-position="225">
+              <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DFA.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DFA.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="101" column="51" selection-start-line="101" selection-start-column="51" selection-end-line="101" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegExp.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RegExp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/automata/resyntax/RegExp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            <state relative-caret-position="150">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/automata/resyntax/Dot.java">
+      <file leaf-file-name="Graph.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/automata/resyntax/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Litteral.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/automata/resyntax/Litteral.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="165">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding>
+                <element signature="e#3554#3573#0" expanded="true" />
+                <element signature="e#4933#4946#0" expanded="true" />
+                <element signature="e#7066#7072#0" expanded="true" />
+                <element signature="e#8327#8346#0" expanded="true" />
+                <element signature="e#9109#9128#0" expanded="true" />
+                <element signature="e#9488#9501#0" expanded="true" />
+                <element signature="e#9899#9905#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,18 +127,8 @@
       <file leaf-file-name="Edge.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/automata/resyntax/Edge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="336">
               <caret line="23" column="47" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Concatenation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/automata/resyntax/Concatenation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -130,8 +137,18 @@
       <file leaf-file-name="OneOrMore.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/automata/resyntax/OneOrMore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state relative-caret-position="195">
+              <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Closure.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/automata/resyntax/Closure.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -162,18 +179,18 @@
         <option value="$PROJECT_DIR$/src/Automata.java" />
         <option value="$PROJECT_DIR$/src/automata/resyntax/Edge.java" />
         <option value="$PROJECT_DIR$/src/automata/resyntax/ComparableSet.java" />
-        <option value="$PROJECT_DIR$/src/EpsilonNFA.java" />
-        <option value="$PROJECT_DIR$/src/automata/resyntax/Graph.java" />
-        <option value="$PROJECT_DIR$/src/automata/resyntax/Closure.java" />
-        <option value="$PROJECT_DIR$/src/automata/resyntax/Concatenation.java" />
-        <option value="$PROJECT_DIR$/src/automata/resyntax/Dot.java" />
         <option value="$PROJECT_DIR$/src/automata/resyntax/Litteral.java" />
-        <option value="$PROJECT_DIR$/src/automata/resyntax/OneOrMore.java" />
-        <option value="$PROJECT_DIR$/src/automata/resyntax/Union.java" />
-        <option value="$PROJECT_DIR$/src/automata/resyntax/ZeroOrOne.java" />
         <option value="$PROJECT_DIR$/src/DFA.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/automata/resyntax/RegExp.java" />
+        <option value="$PROJECT_DIR$/src/automata/resyntax/OneOrMore.java" />
+        <option value="$PROJECT_DIR$/src/automata/resyntax/Concatenation.java" />
+        <option value="$PROJECT_DIR$/src/automata/resyntax/Closure.java" />
+        <option value="$PROJECT_DIR$/src/automata/resyntax/Union.java" />
+        <option value="$PROJECT_DIR$/src/automata/resyntax/ZeroOrOne.java" />
+        <option value="$PROJECT_DIR$/src/automata/resyntax/Dot.java" />
+        <option value="$PROJECT_DIR$/src/automata/resyntax/Graph.java" />
+        <option value="$PROJECT_DIR$/src/EpsilonNFA.java" />
       </list>
     </option>
   </component>
@@ -653,13 +670,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270809" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32669324" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37051794" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47675964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -719,7 +736,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="35" column="5" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2379#2390#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -780,15 +799,23 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Downloads/Example139.java.txt" />
-    <entry file="file://$PROJECT_DIR$/testcases/testcase11.txt">
+    <entry file="file://$PROJECT_DIR$/src/automata/resyntax/ComparableSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/testcase9.txt">
+    <entry file="file://$PROJECT_DIR$/testcases/testcase1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/testcase2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -804,7 +831,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/testcase2.txt">
+    <entry file="file://$PROJECT_DIR$/testcases/testcase11.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/testcase9.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -814,81 +849,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testcases/testcase8.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="23" />
+        <state relative-caret-position="15">
+          <caret line="1" column="77" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/automata/resyntax/ComparableSet.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/automata/resyntax/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="150" column="7" selection-start-line="150" selection-start-column="7" selection-end-line="150" selection-end-column="7" />
+        <state relative-caret-position="315">
+          <caret line="101" column="31" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
           <folding>
-            <element signature="e#3522#3541#0" expanded="true" />
-            <element signature="e#4901#4914#0" expanded="true" />
-            <element signature="e#7034#7040#0" expanded="true" />
-            <element signature="e#8295#8314#0" expanded="true" />
-            <element signature="e#9077#9096#0" expanded="true" />
-            <element signature="e#9456#9469#0" expanded="true" />
-            <element signature="e#9867#9873#0" expanded="true" />
+            <element signature="e#2379#2390#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/testcase1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EpsilonNFA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1106">
-          <caret line="84" column="83" selection-start-line="84" selection-start-column="83" selection-end-line="84" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/automata/resyntax/Closure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="17" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/automata/resyntax/Concatenation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/automata/resyntax/Dot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/automata/resyntax/Edge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="47" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -900,53 +873,104 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/automata/resyntax/Concatenation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="20" column="70" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/automata/resyntax/Closure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/automata/resyntax/OneOrMore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/automata/resyntax/Union.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/automata/resyntax/ZeroOrOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DFA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="101" column="51" selection-start-line="101" selection-start-column="51" selection-end-line="101" selection-end-column="51" />
+        <state relative-caret-position="195">
+          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/automata/resyntax/RegExp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        <state relative-caret-position="150">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/automata/resyntax/Union.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/automata/resyntax/ZeroOrOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/automata/resyntax/Edge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/automata/resyntax/Dot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/automata/resyntax/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="e#3554#3573#0" expanded="true" />
+            <element signature="e#4933#4946#0" expanded="true" />
+            <element signature="e#7066#7072#0" expanded="true" />
+            <element signature="e#8327#8346#0" expanded="true" />
+            <element signature="e#9109#9128#0" expanded="true" />
+            <element signature="e#9488#9501#0" expanded="true" />
+            <element signature="e#9899#9905#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EpsilonNFA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="82" column="61" selection-start-line="82" selection-start-column="61" selection-end-line="82" selection-end-column="61" />
+          <folding>
+            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DFA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-39">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,0 +1,7 @@
+[fPQ. P ^ Q <==> Q ^ P]	PASS	[fPQ. P ^ Q <==> Q ^ P
+[ eR S. R = S]	PASS	[ eR S. R = S
+[fR . e P. R = P]	PASS	[fR . e P. R = P
+[e T. e S. T V S ==> S]	PASS	[e T. e S. T V S ==> S
+[e Q. R V e. T]	PASS	[e Q. R V e. T
+[R V S ==> S V R]	PASS	[R V S ==> S V R
+[R ==> R]	PASS	[R ==> R
