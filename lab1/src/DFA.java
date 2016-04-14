@@ -62,7 +62,7 @@ public class DFA {
         }
     }
 
-    public static boolean logicalXOR(boolean x, boolean y) {
+    public boolean logicalXOR(boolean x, boolean y) {
         return ( ( x || y ) && ! ( x && y ) );
     }
 
@@ -73,10 +73,10 @@ public class DFA {
         print2dArray(table);
         System.out.println(Arrays.toString(table));
         for (int i = 0; i < table.length; i++) {
-            for (int j = 0; j <= i; j++) {
+            for (int j = 0; j < table.length; j++) {
 
                 if (logicalXOR(finalStates.contains(states[i]), finalStates.contains(states[j]))) {
-                    table[i][j] = "";
+                    table[i][j] = RegExp.EPSILON + "";
                 }
             }
         }
@@ -85,7 +85,7 @@ public class DFA {
         while (dirty) {
             dirty = false;
             for (int i = 0; i < table.length; i++) {
-                for (int j = 0; j <= i; j++) {
+                for (int j = 0; j < table.length; j++) {
                     String diff = table[i][j];
                     if (diff != null) {
                         continue;
@@ -97,21 +97,23 @@ public class DFA {
                         // do transition
                         String a = graph.hasChildWithEdgeLabel(x, c);
                         String b = graph.hasChildWithEdgeLabel(y, c);
-                        if (a != null && b != null) {
+                        if (a != null && b != null && !visited.contains(a + b)) {
                             // check if that pair is in the table
                             int ia = indexOf(states, a);
                             int ib = indexOf(states, b);
                             if (table[ia][ib] != null) {
+                                System.out.println(x + y + a + b);
                                 table[i][j] = table[ia][ib] + c;
                                 dirty = true;
-                            } else {
-                                
                             }
                         }
                     }
                 }
             }
             print2dArray(table);
+            System.out.println(Arrays.toString(states));
+            System.out.println(this.alphabet);
+            System.out.println();
         }
     }
 
@@ -125,9 +127,10 @@ public class DFA {
     }
 
     public void print2dArray(String[][] table) {
-        System.out.println();
-        for (int i = 0; i < table.length; i++) {
+
+        for (int i = 1; i < table.length; i++) {
             System.out.println(Arrays.toString(table[i]));
         }
+        System.out.println();
     }
 }

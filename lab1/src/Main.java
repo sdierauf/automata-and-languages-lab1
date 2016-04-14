@@ -112,6 +112,6 @@ public class Main {
                 System.out.println(input + "\tFAIL");
             }
         }
-//        dfa.takeQuotient();
+        dfa.takeQuotient();
     }
 }
