@@ -2,8 +2,10 @@ import automata.resyntax.Graph;
 import automata.resyntax.Edge;
 import automata.resyntax.RegExp;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * Created by sdierauf on 4/12/16.
@@ -15,10 +17,10 @@ public class DFA {
     public String start = "START";
     public Set<Character> alphabet;
 
-    public DFA(Graph<String, Character> g) {
+    public DFA(Graph<String, Character> g, Set<Character> alphabet) {
         this.graph = g;
         this.finalStates = g.finalStates;
-        this.alphabet = new HashSet<>();
+        this.alphabet = alphabet;
 //        determineAlphabet();
     }
 
@@ -57,6 +59,75 @@ public class DFA {
             return input;
         } else {
             return null;
+        }
+    }
+
+    public static boolean logicalXOR(boolean x, boolean y) {
+        return ( ( x || y ) && ! ( x && y ) );
+    }
+
+    public void takeQuotient() {
+        int numStates = graph.listNodes().size();
+        String[] states = graph.listNodes().toArray(new String[numStates]);
+        String[][] table = new String[numStates][numStates];
+        print2dArray(table);
+        System.out.println(Arrays.toString(table));
+        for (int i = 0; i < table.length; i++) {
+            for (int j = 0; j <= i; j++) {
+
+                if (logicalXOR(finalStates.contains(states[i]), finalStates.contains(states[j]))) {
+                    table[i][j] = "";
+                }
+            }
+        }
+        print2dArray(table);
+        boolean dirty = true;
+        while (dirty) {
+            dirty = false;
+            for (int i = 0; i < table.length; i++) {
+                for (int j = 0; j <= i; j++) {
+                    String diff = table[i][j];
+                    if (diff != null) {
+                        continue;
+                    }
+                    String x = states[i];
+                    String y = states[j];
+                    Set<String> visited = new TreeSet<>();
+                    for (Character c : this.alphabet) {
+                        // do transition
+                        String a = graph.hasChildWithEdgeLabel(x, c);
+                        String b = graph.hasChildWithEdgeLabel(y, c);
+                        if (a != null && b != null) {
+                            // check if that pair is in the table
+                            int ia = indexOf(states, a);
+                            int ib = indexOf(states, b);
+                            if (table[ia][ib] != null) {
+                                table[i][j] = table[ia][ib] + c;
+                                dirty = true;
+                            } else {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            print2dArray(table);
+        }
+    }
+
+    public int indexOf(String[] arr, String t) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].equals(t)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public void print2dArray(String[][] table) {
+        System.out.println();
+        for (int i = 0; i < table.length; i++) {
+            System.out.println(Arrays.toString(table[i]));
         }
     }
 }

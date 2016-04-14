@@ -33,7 +33,7 @@ public class Main {
         e.buildFromRegexTree(t);
         Graph<String, Character> newg = e.toDFAGraph();
         newg.printGraph();
-        DFA dfa = new DFA(newg);
+        DFA dfa = new DFA(newg, new HashSet<Character>());
         checkMatch(testRegex, "abc");
         checkMatch(testRegex, "ac");
         checkMatch(testRegex, "");
@@ -58,7 +58,7 @@ public class Main {
         }
         EpsilonNFA e = new EpsilonNFA();
         e.buildFromRegexTree(t);
-        DFA dfa = new DFA(e.toDFAGraph());
+        DFA dfa = new DFA(e.toDFAGraph(), new HashSet<Character>());
         System.out.println(regex + " MATCHES " + input + ": " + dfa.match(input));
     }
 
@@ -100,7 +100,7 @@ public class Main {
         nfa.setAlphabet(alphabet);
         nfa.buildFromRegexTree(t);
         nfa.graph.printGraph();
-        DFA dfa = new DFA(nfa.toDFAGraph());
+        DFA dfa = new DFA(nfa.toDFAGraph(), alphabet);
         dfa.graph.printGraph();
         System.out.println("Matching " + substringRegex);
         while (fileScanner.hasNextLine()) {
@@ -112,5 +112,6 @@ public class Main {
                 System.out.println(input + "\tFAIL");
             }
         }
+//        dfa.takeQuotient();
     }
 }

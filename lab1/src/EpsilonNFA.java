@@ -29,6 +29,7 @@ public class EpsilonNFA {
 
     public void setAlphabet(Set<Character> a) {
         this.alphabet = a;
+        this.graph.alpha = a;
     }
 
     public Graph<String, Character> toDFAGraph() {
@@ -49,7 +50,7 @@ public class EpsilonNFA {
             ret.addFinalState(start);
         }
         setToName.put(starterClosed, start);
-        
+
         todo.add(starterClosed);
 
         while(!todo.isEmpty()) {
@@ -78,16 +79,42 @@ public class EpsilonNFA {
                     Set<String> closed = epsilonClose(transitionFunction.get(key));
                     counter++;
                     String DFAResultNode = "s" + counter;
+                    boolean hasDot = false;
+                    for (String parent: states) {
+                        for (String child: closed) {
+                            for (Edge<String, Character> e : this.graph.getEdgesToChild(parent, child)) {
+                                if (e.getData() == RegExp.DOT) {
+                                    hasDot = true;
+                                }
+                            }
+                        }
+                    }
                     if (!setToName.containsKey(closed)) {
                         todo.add(closed);
                         setToName.put(closed, DFAResultNode);
-                        ret.addEdge(DFAStateGroupName, key, DFAResultNode);
-
+//                    System.out.println("closed: " + closed + " with name: " + DFAResultNode);
+                        if (hasDot) {
+                            for (Character c: this.alphabet) {
+                                if (ret.hasChildWithEdgeLabel(DFAStateGroupName, c) == null) {
+                                    ret.addEdge(DFAStateGroupName, c, DFAResultNode);
+                                }
+                            }
+                        } else {
+                            ret.addEdge(DFAStateGroupName, key, DFAResultNode);
+                        }
                         if (closed.contains(end)) {
                             ret.addFinalState(DFAResultNode);
                         }
                     } else {
-                        ret.addEdge(DFAStateGroupName, key, setToName.get(closed));
+                        if (hasDot) {
+                            for (Character c: this.alphabet) {
+                                if (ret.hasChildWithEdgeLabel(DFAStateGroupName, c) == null) {
+                                    ret.addEdge(DFAStateGroupName, c, setToName.get(closed));
+                                }
+                            }
+                        } else {
+                            ret.addEdge(DFAStateGroupName, key, setToName.get(closed));
+                        }
                     }
 
                 }
@@ -99,6 +126,7 @@ public class EpsilonNFA {
     }
 
     public Set<String> epsilonClose(Set<String> states) {
+
         Queue<String> todo = new LinkedList<>();
         Set<String> ret = new HashSet<>();
         ret.addAll(states);
