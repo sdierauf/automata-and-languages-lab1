@@ -33,7 +33,7 @@ public class Main {
         e.buildFromRegexTree(t);
         Graph<String, Character> newg = e.toDFAGraph();
         newg.printGraph();
-        DFA dfa = new DFA(newg, new HashSet<Character>());
+        DFA dfa = new DFA(newg, new HashSet<Character>(), "START");
         checkMatch(testRegex, "abc");
         checkMatch(testRegex, "ac");
         checkMatch(testRegex, "");
@@ -58,7 +58,7 @@ public class Main {
         }
         EpsilonNFA e = new EpsilonNFA();
         e.buildFromRegexTree(t);
-        DFA dfa = new DFA(e.toDFAGraph(), new HashSet<Character>());
+        DFA dfa = new DFA(e.toDFAGraph(), new HashSet<Character>(), "START");
         System.out.println(regex + " MATCHES " + input + ": " + dfa.match(input));
     }
 
@@ -100,18 +100,25 @@ public class Main {
         nfa.setAlphabet(alphabet);
         nfa.buildFromRegexTree(t);
         nfa.graph.printGraph();
-        DFA dfa = new DFA(nfa.toDFAGraph(), alphabet);
-        dfa.graph.printGraph();
+        DFA dfa = new DFA(nfa.toDFAGraph(), alphabet, "START");
+        DFA quotient = dfa.takeQuotient();
+//        dfa.graph.printGraph();
         System.out.println("Matching " + substringRegex);
         while (fileScanner.hasNextLine()) {
             String input = fileScanner.nextLine();
             String matches = dfa.nonTerminalMatch(input);
+            String quotientMatches = quotient.nonTerminalMatch(input);
             if (matches != null) {
-                System.out.println(input + "\tPASS:\t" + matches);
+                System.out.println(input + "\tPASS: \t" + matches);
             } else {
                 System.out.println(input + "\tFAIL");
             }
+            if (quotientMatches != null) {
+                System.out.println(input + "\tPASS: q\t" + matches);
+            } else {
+                System.out.println(input + "\tFAIL  q");
+            }
         }
-        dfa.takeQuotient();
+
     }
 }

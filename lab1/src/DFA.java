@@ -2,10 +2,7 @@ import automata.resyntax.Graph;
 import automata.resyntax.Edge;
 import automata.resyntax.RegExp;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 /**
  * Created by sdierauf on 4/12/16.
@@ -14,13 +11,14 @@ public class DFA {
 
     public Graph<String, Character> graph;
     public Set<String> finalStates;
-    public String start = "START";
+    public String start;
     public Set<Character> alphabet;
 
-    public DFA(Graph<String, Character> g, Set<Character> alphabet) {
+    public DFA(Graph<String, Character> g, Set<Character> alphabet, String startNode) {
         this.graph = g;
         this.finalStates = g.finalStates;
         this.alphabet = alphabet;
+        this.start = startNode;
 //        determineAlphabet();
     }
 
@@ -66,12 +64,12 @@ public class DFA {
         return ( ( x || y ) && ! ( x && y ) );
     }
 
-    public void takeQuotient() {
+    public DFA takeQuotient() {
         int numStates = graph.listNodes().size();
         String[] states = graph.listNodes().toArray(new String[numStates]);
         String[][] table = new String[numStates][numStates];
         print2dArray(table);
-        System.out.println(Arrays.toString(table));
+//        System.out.println(Arrays.toString(table));
         for (int i = 0; i < table.length; i++) {
             for (int j = 0; j < table.length; j++) {
 
@@ -102,7 +100,7 @@ public class DFA {
                             int ia = indexOf(states, a);
                             int ib = indexOf(states, b);
                             if (table[ia][ib] != null) {
-                                System.out.println(x + y + a + b);
+//                                System.out.println(x + y + a + b);
                                 table[i][j] = table[ia][ib] + c;
                                 dirty = true;
                             }
@@ -110,11 +108,49 @@ public class DFA {
                     }
                 }
             }
-            print2dArray(table);
-            System.out.println(Arrays.toString(states));
-            System.out.println(this.alphabet);
-            System.out.println();
+//            print2dArray(table);
+//            System.out.println(Arrays.toString(states));
+//            System.out.println(this.alphabet);
+//            System.out.println();
         }
+        Graph<String, Character> retGraph = new Graph<>();
+        Map<String, TreeSet<String>> state2set = new HashMap<String, TreeSet<String>>();
+        for (String state: states) {
+            TreeSet<String> group = new TreeSet<>();
+            group.add(state);
+            state2set.put(state, group);
+        }
+        for (int i = 0; i < table.length; i++) {
+            for (int j = 0; j < table.length; j++) {
+                if (table[i][j] == null) {
+                    state2set.get(states[i]).add(states[j]);
+                    state2set.get(states[j]).add(states[i]);
+                }
+            }
+        }
+//        System.out.println(state2set);
+        String startNode = "START";
+
+
+        for (Set<String> nodeName : state2set.values()) {
+            retGraph.addNode(nodeName.toString());
+            if (nodeName.contains(this.start)) {
+                startNode = nodeName.toString();
+            }
+            for (String individual: nodeName) {
+                if (this.finalStates.contains(individual)) {
+                   retGraph.finalStates.add(nodeName.toString());
+                }
+                for (Edge<String, Character> e: graph.getEdges(individual)) {
+                    retGraph.addEdge(nodeName.toString(), e.getData(), state2set.get(e.getDestination()).toString());
+                }
+
+            }
+        }
+        retGraph.printGraph();
+
+        DFA quotientDfa = new DFA(retGraph, this.alphabet, startNode);
+        return quotientDfa;
     }
 
     public int indexOf(String[] arr, String t) {
