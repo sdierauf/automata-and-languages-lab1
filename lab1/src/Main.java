@@ -66,7 +66,7 @@ public class Main {
         System.out.print("Name of file: ");
         Scanner sysInput = new Scanner(System.in);
 //        String filename = sysInput.nextLine();
-        String filename = "testcases/testcase1.txt";
+        String filename = "testcases/testcase11.txt";
         File file = new File(filename);
         System.out.println();
         Scanner fileScanner = null;

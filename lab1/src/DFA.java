@@ -164,9 +164,9 @@ public class DFA {
 
     public void print2dArray(String[][] table) {
 
-        for (int i = 1; i < table.length; i++) {
-            System.out.println(Arrays.toString(table[i]));
-        }
-        System.out.println();
+//        for (int i = 1; i < table.length; i++) {
+//            System.out.println(Arrays.toString(table[i]));
+//        }
+//        System.out.println();
     }
 }
