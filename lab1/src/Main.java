@@ -12,34 +12,34 @@ import automata.resyntax.RegExp;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.print("yolo");
-
-        // get regex
-        // build with REParser
-        // convert into Graph
-        String testRegex = "d*";
-
-        RegExp t = null;
-        try {
-            t = REParser.parse(testRegex);
-            System.out.println(t);
-        } catch (Exception e) {
-            System.out.println("there was an error");
-        }
-        if (t == null) {
-            return;
-        }
-        EpsilonNFA e = new EpsilonNFA();
-        e.buildFromRegexTree(t);
-        Graph<String, Character> newg = e.toDFAGraph();
-        newg.printGraph();
-        DFA dfa = new DFA(newg, new HashSet<Character>(), "START");
-        checkMatch(testRegex, "abc");
-        checkMatch(testRegex, "ac");
-        checkMatch(testRegex, "");
-        checkMatch(testRegex, "d");
-        checkMatch(testRegex, "dddddddd");
-        checkMatch(testRegex, "abcdddabcabcacdddddddabd");
+//        System.out.print("yolo");
+//
+//        // get regex
+//        // build with REParser
+//        // convert into Graph
+//        String testRegex = "d*";
+//
+//        RegExp t = null;
+//        try {
+//            t = REParser.parse(testRegex);
+//            System.out.println(t);
+//        } catch (Exception e) {
+//            System.out.println("there was an error");
+//        }
+//        if (t == null) {
+//            return;
+//        }
+//        EpsilonNFA e = new EpsilonNFA();
+//        e.buildFromRegexTree(t);
+//        Graph<String, Character> newg = e.toDFAGraph();
+//        newg.printGraph();
+//        DFA dfa = new DFA(newg, new HashSet<Character>(), "START");
+//        checkMatch(testRegex, "abc");
+//        checkMatch(testRegex, "ac");
+//        checkMatch(testRegex, "");
+//        checkMatch(testRegex, "d");
+//        checkMatch(testRegex, "dddddddd");
+//        checkMatch(testRegex, "abcdddabcabcacdddddddabd");
 
         loopForInput();
 
@@ -111,12 +111,12 @@ public class Main {
             if (matches != null) {
                 System.out.println(input + "\tPASS: \t" + matches);
             } else {
-                System.out.println(input + "\tFAIL");
+//                System.out.println(input + "\tFAIL");
             }
             if (quotientMatches != null) {
-                System.out.println(input + "\tPASS: q\t" + matches);
+//                System.out.println(input + "\tPASS: q\t" + matches);
             } else {
-                System.out.println(input + "\tFAIL  q");
+//                System.out.println(input + "\tFAIL  q");
             }
         }
 
