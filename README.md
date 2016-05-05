@@ -1,2 +1,2 @@
-# automata-and-languages-lab1
-daddy
+# Automata and Languages: Lab 1
+KTH's Automata and Languages 
